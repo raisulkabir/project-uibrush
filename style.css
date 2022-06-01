@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*, :: after, ::before{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666;
+}
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin:0 auto;
+}
+
+.row{
+  display: flex; 
+  flex-wrap: wrap; 
+  margin: 0 -15px; 
+}
+
+.col{
+  padding: 0 15px; 
+}
+.col-sm-6{
+  
+  flex-basis: 50%;
+  
+}
+.col-4{
+  flex-basis: 33.333333%;
+  
+}
+
+.col-3{
+  flex-basis: 25%;
+}
+/* .col-6{
+  flex-basis: 50%;
+  
+  }  */
+.d-flex{
+  display: flex;
+}
+
+/* About section */
+.about-us-img{
+  width: 100%;
+  max-width: 95%;
+  height: 100%;
+}
+
+.about-us-img img{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  
+}
+
+.text-primary{
+  color: #39c9da;
+}
+.text-white{
+  color: #fff;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-center{
+  text-align: center;
+}
+
+/* background-color */
+.bg-primary{
+  color: #39c9da;
+}
+/* button */
+.btn{
+  display: inline-block;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn-lg{
+  padding: 17px 40px;
+}
+.btn-primary{
+  background-color: #39c9da;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary:hover{
+  background-color: #075861;
+}
+
+.pad-70{
+  padding: 70px 0;
+}
+
+.section-header{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.section-header p{
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* header part start here */
+
+header{
+  background: url(background_img.png);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  
+}
+/* row er col 2ta 2 side e niye jay */
+.header-wrap{
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.logo h1{
+  font-size: 36px;
+}
+.navbar{
+  list-style-type: none;
+  /* pasapasi rakhar jnno */
+  justify-content: space-between;
+  width: 550px;
+}
+
+/* menu bar er item gulo design korar jnno */
+.navbar li a{
+  text-transform: uppercase;
+  color: #fff;
+  /* font-size: 18px; */
+  font-weight: 600;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+}
+.navbar li a:hover{
+  color: #39c9da;
+  border-bottom: 2px solid #39c9da;
+
+}
+
+.banner-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+}
+.banner-text h2{
+  
+  font-size: 36px;
+  
+  /* download lekhar upore gap create korar jnno */
+  margin-bottom: 40px;
+}
+
+
+
+
+/* about us section start here */
+
+.about-us-img img{
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* straight line create korar jnno */
+
+.border-after{
+  font-size: 17px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.border-after::after{
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #39c9da ;
+
+}
+
+.about-us-text p{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.about-us-text{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/* about us section end here */
+
+
+
+
+
+/* portfolio start here  */
+.portfolio-wrapper , .contact-us-wrapper{
+  background-color: #f3f5f7;
+ 
+}
+
+.port-item{
+  background-color: #fff;
+   border: 1px solid #eee; 
+   margin-right: 18px;
+   margin-bottom: 30px;
+}
+
+.port-text{
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.port-img{
+ position: relative;
+}
+.port-img  img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  transition: .5s;
+}
+
+.port-item:hover .overlay{
+  height: 100%;
+}
+
+.btn-readmore{
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  visibility: hidden;
+  transition: .3s;
+}
+
+.btn-readmore:hover{
+  background-color: #fff;
+  color: #222;
+}
+.port-item:hover .btn-readmore{
+  visibility: visible;
+  transition: .3s;
+}
+
+
+/* portfolio end here */
+
+/* service section start here */
+
+.service-item{
+  text-align: center;
+  border: 1px solid #ddd;
+  margin-right: 18px;
+  padding: 30px 15px;
+  transition: .5s;
+  margin-bottom: 30px;
+}
+
+.icon i{
+  color: #39c9da;
+  font-size: 50px;
+
+}
+
+.service-after{
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.service-after::after{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #ddd;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.service-item p{
+  margin-bottom: 20px;
+}
+
+.btn-readmore-black{
+  background-color: #444;
+  color: #fff;
+}
+
+.service-item:hover{
+  background-color: #39c9da;
+}
+
+.service-item:hover   .icon i,
+.service-item:hover   .service-after,
+.service-item:hover   .service-desc{
+  color: #fff;
+}
+
+.service-item:hover   .btn-readmore-black{
+  background-color: #fff;
+  color: #444;
+} 
+
+
+/* service section end here */
+
+
+/* contact us section start here */
+
+.address h4{
+  margin-bottom: 15px;
+}
+
+.form-group{
+  margin-bottom: 25px;
+  margin-right: 18px; 
+  margin-left: 10px; 
+}
+
+.form-control,.form-text{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 13px;
+  width: 100%;
+  max-width: 95%;
+  height: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-text{
+  height: 155px;
+  resize: vertical;
+  
+}
+
+.btn-submit{
+  float: right;
+  
+  
+  
+}
+
+
+footer{
+  background-color: #39c9da;
+  padding: 20px 0;
+}
